@@ -1,0 +1,44 @@
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="login-section">
+            <h1>Choose Account Type</h1>
+            <div class="account-type">
+                <div id="teacher" class="active" onclick="selectAccount('teacher')">
+                    <img src="teacher.png" alt="Teacher">
+                    <p>Teacher</p>
+                </div>
+                <div id="student" onclick="selectAccount('student')">
+                    <img src="student.jpg" alt="student">
+                    <p>Student</p>
+                </div>
+            </div>
+
+            <form>
+                <p id="welcome-message">Hello Teacher. Log in</p>
+                <input type="email" id="email" placeholder="Email">
+                <input type="password" id="password" placeholder="Password">
+                <div class="forgot-signup">
+                    <a href="#"></a>
+                    <a href="#">Forget password?</a>
+                </div>
+                <button type="button" onclick="login()">Login</button>
+            </form>
+        </div>
+        <div class="signup-section">
+            <h2>New Here?</h2>
+            <p>Sign up and discover a great amount of new opportunities!</p>
+            <button>Sign Up as a teacher</button>
+            <button>Sign Up as a student</button>
+        </div>
+    </div>
+
+    <script src="log_in.js"></script>
+
